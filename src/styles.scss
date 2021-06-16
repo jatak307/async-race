@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #000;
+  color: beige;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 20px;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.button {
+  padding: 4px 0;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-bottom: 1px solid rgb(149, 224, 224);
+  color: rgb(34, 70, 70);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.select-button,
+.remove-button {
+  background: rgb(164, 241, 161);
+  color: rgb(74, 20, 99);
+  width: 60px;
+}
+
+.select-button:hover {
+  background: rgb(230, 240, 90);
+  color:black;
+}
+
+.remove-button:hover {
+  background: rgb(212, 76, 35);
+  color: #ffffff;
+}
+
+.prev-button,
+.next-button {
+  background: rgb(72, 102, 235);
+  color: azure;
+  width: 50px;
+}
+
+.button:disabled {
+  opacity: 0.8;
+}
+
+.button:hover {
+  box-shadow: 0px 3px 6px 0 rgba(149, 224, 224, 0.8);
+}
+
+#garage-menu-button,
+#winners-menu-button {
+  width: 48%;
+  height: 100%;
+  background-color: rgb(115, 189, 192);
+}
+
+#garage-menu-button:hover,
+#winners-menu-button:hover {
+  color: rgb(12, 44, 44);
+  background-color: rgb(127, 206, 209);
+}
+
+.icon {
+  margin-top: 5px;
+  padding: 4px 0;
+  width: 20px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background: rgb(15, 89, 131);
+  color: rgb(168, 223, 223);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.icon:disabled {
+  opacity: 0.8;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: auto;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form > input,
+.form > button {
+  height: 20px;
+  border: none;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  color: rgba(34, 70, 70, 0.7);
+  font-weight: bold;
+}
+
+.form > button {
+  padding: 0 10px;
+  background-color: whitesmoke;
+  border-left: 3px solid cadetblue;
+}
+
+.form > input:disabled {
+  opacity: 0.8;
+}
+
+.form > button:hover {
+  background-color: #fff;
+  color: rgb(12, 44, 44);
+}
+
+#create {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 180px;
+}
+
+.race-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 20px;
+}
+
+.race-control .button {
+  background-color: rgb(233, 228, 161);
+}
+
+#race-button,
+#reset-button {
+  width: 85px;
+  color: rgb(34, 70, 70);
+}
+
+#race-button:hover,
+#reset-button:hover {
+  color: rgb(12, 44, 44);
+  background-color: rgb(243, 239, 186);
+}
+
+#generator-button {
+  width: 119px;
+  color: rgba(34, 70, 70, 0.7);
+  background-color: whitesmoke;
+  border-left: 3px solid cadetblue;
+}
+
+#generator-button:hover {
+  background-color: #fff;
+  color: rgb(12, 44, 44);
+  background-color: rgb(243, 239, 186);
+}
+
+.header {
+  margin-top: 40px;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.car {
+  width: 100px;
+  margin-bottom: -10px;
+}
+
+.car > svg {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+li {
+  width: 100%;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.road {
+  position: relative;
+}
+
+.launch-pad {
+  width: 100%;
+  border-bottom: 1px dashed;
+}
+
+.flag {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 120px;
+  top: 0;
+}
+
+.pagination {
+  margin: 20px 0;
+}
+
+.table {
+  margin-bottom: 100px;
+}
+.table td, .table th {
+  font-size: 20px;
+  padding: 8px;
+}
+.table th {
+  background: rgb(19, 126, 248);
+}
+.table-button {
+  cursor: pointer;
+  user-select: none;
+}
+.table-button.asc::after {
+  content: ' up';
+}
+.table-button.desc::after {
+  content: ' down';
+}
